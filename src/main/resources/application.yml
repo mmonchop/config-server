@@ -1,0 +1,13 @@
+server:
+   port: 8920
+
+spring:
+  profiles: dev
+  cloud:
+    config:
+      server:
+        path: /config
+        git:
+          # git repository containing configurations
+          # For dev purposes it points to a local git repository 
+          uri: file:///C:/projects/config-service/src/main/config-repo/ 

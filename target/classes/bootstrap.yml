@@ -1,0 +1,11 @@
+info:
+  component: Config Server
+
+spring:
+  application:
+    name: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8910/eureka/

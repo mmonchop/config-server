@@ -1,0 +1,11 @@
+info:
+  component: Config Server
+
+spring:
+  application:
+    name: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.username}:${eureka.password}@${eureka.hostname}:8910/eureka/
